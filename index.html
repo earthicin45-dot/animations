@@ -1,1 +1,39 @@
 
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background: #f0f0f0;
+        }
+
+        .welcome::after {
+            content: "Hoş geldin 👋";
+            animation: changeText 10s infinite;
+            font-size: 32px;
+            color: #333;
+        }
+
+        @keyframes changeText {
+            0%   { content: "Hoş geldin 👋"; }
+            25%  { content: "Merhaba 😊"; }
+            50%  { content: "Tekrar hoş geldin ✨"; }
+            75%  { content: "Welcome 😎"; }
+            100% { content: "Hoş geldin 👋"; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="welcome"></div>
+
+</body>
+</html>
